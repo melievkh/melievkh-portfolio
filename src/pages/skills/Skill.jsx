@@ -13,19 +13,14 @@ import {
    SkillContainer,
    Skills,
 } from './Skills.style';
-import { StyledTitle } from '../../components/title/Title';
-import FlexBox from '../../components/flexbox/FlexBox';
-import Heading from '../../components/heading/Heading';
+import FlexBox from '../../components/Flexbox/FlexBox';
+import Heading from '../../components/Heading/Heading';
+import Title from '../../components/Title/Title';
 
 function Skill() {
    return (
       <SkillContainer id="skills">
-         <StyledTitle>
-            <h1>SKILLS</h1>
-            <h2>
-               What I <span style={{ color: '#FFA500' }}>know</span>
-            </h2>
-         </StyledTitle>
+         <Title>My Skills</Title>
          <Skills width="100%" flexDirection="row">
             <FlexBox alignItems="start" width="50%">
                <ul style={{ width: 'auto' }}>

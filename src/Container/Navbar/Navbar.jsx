@@ -1,9 +1,9 @@
 import React, { useRef } from 'react';
-import Heading from '../heading/Heading';
 import { navMenu } from './navMenu';
 import { Wrapper } from './Navbar.style';
-import FlexBox from '../flexbox/FlexBox';
 import { colors } from '../../assets/styles/colors';
+import Heading from '../../components/Heading/Heading';
+import FlexBox from '../../components/Flexbox/FlexBox';
 
 function Navbar() {
    const navbar = useRef(null);

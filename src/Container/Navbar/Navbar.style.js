@@ -6,6 +6,7 @@ export const Wrapper = styled.div`
    height: 55px;
    background-color: inherit;
    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+   background-color: inherit;
    display: flex;
    flex-direction: row;
    transition: 0.2s;

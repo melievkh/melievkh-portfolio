@@ -1,7 +1,7 @@
 import styled from 'styled-components';
 import { media } from '../../assets/media/media';
 import { colors } from '../../assets/styles/colors';
-import FlexBox from '../../components/flexbox/FlexBox';
+import FlexBox from '../../components/Flexbox/FlexBox';
 
 export const AboutContainer = styled(FlexBox)`
    ul {
@@ -32,6 +32,7 @@ export const Informations = styled(FlexBox)`
 `;
 
 export const PersonalInfo = styled(FlexBox)`
+   width: 50%;
    ${media.lg} {
       width: 100%;
       height: auto;
@@ -58,7 +59,7 @@ export const Card = styled(FlexBox)`
       width: 210px;
       height: 210px;
    }
-`
+`;
 export const CircleBox = styled.div`
    width: 150px;
    height: 150px;
@@ -69,6 +70,4 @@ export const CircleBox = styled.div`
    justify-content: center;
    align-items: center;
    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
-
 `;
-

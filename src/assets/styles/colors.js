@@ -1,7 +1,8 @@
-export const colors  = {
-    white: '#fff',
-    text: '#f0f0f0',
-    special: '#ffa500',
-    heading: '#f2f2f2',
-    input: '#173c40'
-}
+export const colors = {
+   white: '#fff',
+   text: '#b5b3b3',
+   special: '#ffaa00',
+   heading: '#e6e1e1',
+   input: '#2d2e2e',
+   bgColor: '#121111',
+};

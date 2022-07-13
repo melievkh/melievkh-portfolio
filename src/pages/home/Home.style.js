@@ -1,6 +1,6 @@
 import styled from 'styled-components';
 import { media } from '../../assets/media/media';
-import FlexBox from '../../components/flexbox/FlexBox';
+import FlexBox from '../../components/Flexbox/FlexBox';
 
 export const HomeContainer = styled(FlexBox)`
    ${media.lg} {
@@ -18,13 +18,6 @@ export const ImgContainer = styled(FlexBox)`
    ${media.lg} {
       display: none;
    }
-   /* img {
-      width: 380px;
-      height: 450px;
-      border-bottom-left-radius: 150px;
-      border-bottom-right-radius: 80px;
-      border-top-right-radius: 150px;
-   } */
 `;
 
 export const TextBox = styled(FlexBox)`

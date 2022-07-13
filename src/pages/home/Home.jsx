@@ -3,8 +3,8 @@ import ReactTypingEffect from 'react-typing-effect';
 import { icons } from '../../mock/icons';
 // import image from '../../assets/img/image.png';
 import { HomeContainer, IconList, ImgContainer, TextBox, TextCont } from './Home.style';
-import Heading from '../../components/heading/Heading';
-import Text from '../../components/text/Text';
+import Heading from '../../components/Heading/Heading';
+import Text from '../../components/Text/Text';
 
 function Home() {
    return (

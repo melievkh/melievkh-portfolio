@@ -1,15 +1,21 @@
 import styled from 'styled-components';
 import { colors } from '../../assets/styles/colors';
-import FlexBox from '../../components/flexbox/FlexBox';
+import FlexBox from '../../components/Flexbox/FlexBox';
 
-export const ContactContainer = styled(FlexBox)`
+export const Wrapper = styled.div`
+   height: 85vh;
    svg {
       font-size: 30px;
    }
 `;
+export const ContactContainer = styled.div`
+  display: flex;
+  flex-direction: row;
+`
 export const AdressBox = styled(FlexBox)`
    width: 40%;
    height: 90%;
+   gap: 10px;
    svg {
       color: ${colors.text};
    }
@@ -34,18 +40,9 @@ export const Icons = styled(FlexBox)`
    }
 `;
 
-export const MsgInput = styled.div`
-   width: 60%;
-   height: 90%;
-   display: flex;
-   flex-direction: column;
-   justify-content: center;
-   align-items: center;
-`;
-
 export const Form = styled.form`
-   width: 100%;
-   height: 90%;
+   width: 60%;
+   height: 100%;
    display: flex;
    justify-content: center;
    align-items: center;
@@ -57,7 +54,7 @@ export const Form = styled.form`
       height: 240px;
       font-size: 18px;
       border-radius: 4px;
-      border: none;
+      border: 1px solid grey;
       outline: none;
       text-indent: 10px;
       background: ${colors.input};
@@ -66,10 +63,10 @@ export const Form = styled.form`
       resize: none;
       transition: 0.1s;
       &:focus {
-         border: 2px solid ${colors.special};
+         border: 1px solid ${colors.special};
       }
       &::-webkit-input-placeholder {
-         color: ${colors.heading};
+         color: ${colors.text};
       }
    }
 `;

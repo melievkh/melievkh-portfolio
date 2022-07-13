@@ -1,10 +1,10 @@
-import Home from './pages/home/Home';
-import About from './pages/about/About';
-import Skill from './pages/skills/Skill';
-import Contact from './pages/contact/Contact';
+import Home from './pages/Home/Home';
+import About from './pages/About/About';
+import Skill from './pages/Skills/Skill';
+import Contact from './pages/Contact/Contact';
 import { GlobalStyle } from './assets/styles/globalStyle';
-import Navbar from './components/navbar/Navbar';
 import { Helmet } from 'react-helmet';
+import Navbar from './Container/Navbar/Navbar';
 
 function App() {
    return (

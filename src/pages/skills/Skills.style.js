@@ -1,6 +1,6 @@
 import styled from 'styled-components';
 import { colors } from '../../assets/styles/colors';
-import FlexBox from '../../components/flexbox/FlexBox';
+import FlexBox from '../../components/Flexbox/FlexBox';
 
 export const SkillContainer = styled(FlexBox)`
    width: 100%;

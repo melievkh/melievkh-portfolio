@@ -6,20 +6,19 @@ import { FiPhoneCall, FiMail } from 'react-icons/fi';
 import { icons } from '../../mock/icons';
 import {
    AdressBox,
-   ContactContainer,
+   Wrapper,
    Form,
    Icons,
    MailText,
-   MsgInput,
    Name,
+   ContactContainer,
 } from './Contact.style';
-import Button from '../../components/button/Button';
-import { StyledInput } from '../../components/input/input.style';
-import { StyledTitle } from '../../components/title/Title';
-import FlexBox from '../../components/flexbox/FlexBox';
-import Heading from '../../components/heading/Heading';
-import Text from '../../components/text/Text';
-import { colors } from '../../assets/styles/colors';
+import Button from '../../components/Button/Button';
+import Input from '../../components/Input/Input';
+import FlexBox from '../../components/Flexbox/FlexBox';
+import Heading from '../../components/Heading/Heading';
+import Text from '../../components/Text/Text';
+import Title from '../../components/Title/Title';
 
 function Contact() {
    const initialValues = { name: '', surname: '', email: '', comment: '' };
@@ -46,123 +45,114 @@ function Contact() {
    };
 
    return (
-      <ContactContainer height="85vh" id="contact">
-         <StyledTitle>
-            <h1>CONTACT</h1>
-            <h2>
-               Get in <span style={{ color: colors.special }}>Touch</span>
-            </h2>
-         </StyledTitle>
-         <FlexBox flexDirection="row" height="80%">
+      <Wrapper id="contact">
+         <Title>Contact Me</Title>
+         <ContactContainer>
             <AdressBox>
-               <FlexBox width="70%" height="100%">
-                  <Heading>CONTACT INFO</Heading>
-                  <Text align="start">
-                     Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-                     Dolore porro repudiandae veniam nesciunt odio eius animi
-                     saepe...
-                  </Text>
-                  <FlexBox>
-                     <FlexBox height="30%" flexDirection="row" gap="10px">
-                        <GoLocation />
-                        <MailText>
-                           <Heading size="sm" style={{ margin: 0 }}>
-                              ADDRESS POINT
-                           </Heading>
-                           <Text>Uzbekistan, Samarkand</Text>
-                        </MailText>
-                     </FlexBox>
-                     <FlexBox height="30%" flexDirection="row" gap="10px">
-                        <FiMail />
-                        <MailText>
-                           <Heading size="sm" style={{ margin: 0 }}>
-                              MAIL ME
-                           </Heading>
-                           <Text>khushnudmeliev21@gmail.com</Text>
-                        </MailText>
-                     </FlexBox>
-                     <FlexBox height="30%" flexDirection="row" gap="10px">
-                        <FiPhoneCall />
-                        <MailText>
-                           <Heading size="sm" style={{ margin: 0 }}>
-                              CALL ME
-                           </Heading>
-                           <Text>xx xxx xx xx</Text>
-                        </MailText>
-                     </FlexBox>
+               <Heading>CONTACT INFO</Heading>
+               <Text align="start">
+                  Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                  Dolore porro repudiandae veniam nesciunt odio eius animi
+                  saepe...
+               </Text>
+               <FlexBox gap="10px">
+                  <FlexBox height="30%" flexDirection="row" gap="10px">
+                     <GoLocation />
+                     <MailText>
+                        <Heading size="sm" style={{ margin: 0 }}>
+                           ADDRESS POINT
+                        </Heading>
+                        <Text>Uzbekistan, Samarkand</Text>
+                     </MailText>
                   </FlexBox>
-                  <Icons>
-                     <ul>
-                        {icons.map((icon) => (
-                           <li key={icon.id}>
-                              <a
-                                 href={icon.link}
-                                 target="_blank"
-                                 rel="noopener noreferrer"
-                              >
-                                 {icon.iconName}
-                              </a>
-                           </li>
-                        ))}
-                     </ul>
-                  </Icons>
+                  <FlexBox height="30%" flexDirection="row" gap="10px">
+                     <FiMail />
+                     <MailText>
+                        <Heading size="sm" style={{ margin: 0 }}>
+                           MAIL ME
+                        </Heading>
+                        <Text>khushnudmeliev21@gmail.com</Text>
+                     </MailText>
+                  </FlexBox>
+                  <FlexBox height="30%" flexDirection="row" gap="10px">
+                     <FiPhoneCall />
+                     <MailText>
+                        <Heading size="sm" style={{ margin: 0 }}>
+                           CALL ME
+                        </Heading>
+                        <Text>xx xxx xx xx</Text>
+                     </MailText>
+                  </FlexBox>
                </FlexBox>
+               <Icons>
+                  <ul>
+                     {icons.map((icon) => (
+                        <li key={icon.id}>
+                           <a
+                              href={icon.link}
+                              target="_blank"
+                              rel="noopener noreferrer"
+                           >
+                              {icon.iconName}
+                           </a>
+                        </li>
+                     ))}
+                  </ul>
+               </Icons>
             </AdressBox>
-            <MsgInput>
-               <Form onSubmit={validateForm}>
-                  <Name>
-                     <StyledInput
-                        name="name"
-                        type="text"
-                        placeholder="First Name"
-                        onChange={(e) =>
-                           setDetails({ ...details, name: e.target.value })
-                        }
-                        value={details.name}
-                        autoComplete="off"
-                     />
-                     <StyledInput
-                        name="surname"
-                        type="text"
-                        placeholder="Surname"
-                        onChange={(e) =>
-                           setDetails({ ...details, surname: e.target.value })
-                        }
-                        value={details.surname}
-                        autoComplete="off"
-                     />
-                  </Name>
-                  <StyledInput
-                     wd="675px"
-                     name="email"
-                     type="email"
-                     placeholder="...name@gmail.com"
+            <Form onSubmit={validateForm}>
+               <Name>
+                  <Input
+                     name="name"
+                     type="text"
+                     placeholder="First Name"
                      onChange={(e) =>
-                        setDetails({ ...details, email: e.target.value })
+                        setDetails({ ...details, name: e.target.value })
                      }
-                     value={details.email}
+                     value={details.name}
                      autoComplete="off"
                   />
-                  <textarea
-                     name="message"
-                     placeholder="Your Message"
-                     cols="30"
-                     rows="10"
+                  <Input
+                     name="surname"
+                     type="text"
+                     placeholder="Surname"
                      onChange={(e) =>
-                        setDetails({ ...details, message: e.target.value })
+                        setDetails({ ...details, surname: e.target.value })
                      }
-                     value={details.message}
+                     value={details.surname}
                      autoComplete="off"
-                  ></textarea>
-                  <Button wd="160px" hg="40px" style={{ marginLeft: '500px' }}>
-                     <FlexBox flexDirection="row" justifyContent="space-evenly">
-                        Send Message <FaTelegram style={{ fontSize: '22px' }} />
-                     </FlexBox>
-                  </Button>
-               </Form>
-            </MsgInput>
-         </FlexBox>
-      </ContactContainer>
+                  />
+               </Name>
+               <Input
+                  wd="675px"
+                  name="email"
+                  type="email"
+                  placeholder="...name@gmail.com"
+                  onChange={(e) =>
+                     setDetails({ ...details, email: e.target.value })
+                  }
+                  value={details.email}
+                  autoComplete="off"
+               />
+               <textarea
+                  name="message"
+                  placeholder="Your Message"
+                  cols="30"
+                  rows="10"
+                  onChange={(e) =>
+                     setDetails({ ...details, message: e.target.value })
+                  }
+                  value={details.message}
+                  autoComplete="off"
+               ></textarea>
+               <Button wd="160px" hg="40px" style={{ marginLeft: '500px' }}>
+                  <FlexBox flexDirection="row" justifyContent="space-evenly">
+                     Send Message <FaTelegram style={{ fontSize: '22px' }} />
+                  </FlexBox>
+               </Button>
+            </Form>
+         </ContactContainer>
+      </Wrapper>
    );
 }
 
