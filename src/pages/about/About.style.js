@@ -31,8 +31,13 @@ export const Informations = styled(FlexBox)`
    }
 `;
 
-export const PersonalInfo = styled(FlexBox)`
+export const ProgrammingSkills = styled(FlexBox)`
    width: 50%;
+   align-items: flex-start;
+   padding: 10px 20px;
+   li{
+      margin: 0;
+   }
    ${media.lg} {
       width: 100%;
       height: auto;
@@ -70,4 +75,5 @@ export const CircleBox = styled.div`
    justify-content: center;
    align-items: center;
    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+   border: 2px solid ${colors.special};
 `;

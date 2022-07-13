@@ -3,24 +3,19 @@ import { media } from '../../assets/media/media';
 import FlexBox from '../../components/Flexbox/FlexBox';
 
 export const HomeContainer = styled(FlexBox)`
+   height: 90vh;
+   flex-direction: row;
    ${media.lg} {
       height: auto;
    }
 `;
 
-export const TextCont = styled(FlexBox)`
-   ${media.lg} {
-      width: 100%;
-   }
-`;
-
-export const ImgContainer = styled(FlexBox)`
-   ${media.lg} {
-      display: none;
-   }
-`;
 
 export const TextBox = styled(FlexBox)`
+   width: 800px;
+   height: 80%;
+   align-items: center;
+   gap: 8px;
    ${media.lg} {
       align-items: center;
       justify-content: center;
@@ -29,7 +24,7 @@ export const TextBox = styled(FlexBox)`
 export const IconList = styled.ul`
    width: 100%;
    padding: 0;
-   margin-top: 40px;
+   margin-top: 60px;
    display: flex;
    flex-direction: row;
    align-items: center;

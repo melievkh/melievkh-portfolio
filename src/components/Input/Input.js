@@ -9,12 +9,12 @@ const Input = styled.input`
    outline: none;
    background: ${colors.input};
    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
-   border: 1px solid grey;
+   border: 1px solid ${colors.special};
    color: ${colors.heading};
    transition: 0.1s;
    font-family: sans-serif;
    &:focus {
-      border: 1px solid ${colors.special};
+   border: 1px solid ${colors.heading};
    }
    &::-webkit-input-placeholder {
       color: ${colors.text};

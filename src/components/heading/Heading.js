@@ -10,13 +10,13 @@ const headingSize = {
       }
    `,
    md: css`
-      font-size: 25px;
+      font-size: 24px;
       ${media.lg} {
          font-size: 22px;
       }
    `,
    lg: css`
-      font-size: 30px;
+      font-size: 55px;
       ${media.lg} {
          font-size: 26px;
       }
@@ -29,5 +29,6 @@ const Heading = styled.h1`
    color: ${({ color }) => color || colors.heading};
    text-indent: ${({ textIndent }) => textIndent};
    text-align: ${({ align }) => align || 'center'};
+   font-weight: bold;
 `;
 export default Heading;

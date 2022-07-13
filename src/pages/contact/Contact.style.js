@@ -15,10 +15,7 @@ export const ContactContainer = styled.div`
 export const AdressBox = styled(FlexBox)`
    width: 40%;
    height: 90%;
-   gap: 10px;
-   svg {
-      color: ${colors.text};
-   }
+   gap: 20px;
 `;
 
 export const MailText = styled.div`
@@ -54,7 +51,7 @@ export const Form = styled.form`
       height: 240px;
       font-size: 18px;
       border-radius: 4px;
-      border: 1px solid grey;
+      border: 1px solid ${colors.special};
       outline: none;
       text-indent: 10px;
       background: ${colors.input};
@@ -63,7 +60,7 @@ export const Form = styled.form`
       resize: none;
       transition: 0.1s;
       &:focus {
-         border: 1px solid ${colors.special};
+         border: 1px solid ${colors.heading};
       }
       &::-webkit-input-placeholder {
          color: ${colors.text};

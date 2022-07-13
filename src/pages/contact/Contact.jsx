@@ -50,7 +50,7 @@ function Contact() {
          <ContactContainer>
             <AdressBox>
                <Heading>CONTACT INFO</Heading>
-               <Text align="start">
+               <Text align="start" style={{width: '450px'}}>
                   Lorem ipsum dolor sit, amet consectetur adipisicing elit.
                   Dolore porro repudiandae veniam nesciunt odio eius animi
                   saepe...

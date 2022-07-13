@@ -5,82 +5,57 @@ import {
    CircleBox,
    Experiences,
    Informations,
-   PersonalInfo,
+   ProgrammingSkills,
 } from './About.style';
-import Button from '../../components/Button/Button';
 import Title from '../../components/Title/Title';
-import FlexBox from '../../components/Flexbox/FlexBox';
 import Heading from '../../components/Heading/Heading';
-import { colors } from '../../assets/styles/colors';
 
 function About() {
-   const hiringMsg = () => {
-      alert('So as to hire me, you need to contact with me!');
-   };
    return (
       <AboutContainer height="100vh" id="about">
          <Title>About Me</Title>
          <Informations width="100%" height="80%" flexDirection="row">
-            <PersonalInfo>
-               <Heading size="lg" color={colors.special}>
-                  Personal Infos
+            <ProgrammingSkills>
+               <Heading>Programming Skills</Heading>
+               <ul>
+                  <li>
+                     <b>Bootstrap, Material UI, Styled Components</b>
+                  </li>
+                  <li>
+                     Experience in using
+                     <b>
+                        ReactJS Components, Hooks, Forms, Events, Keys, Router
+                     </b>
+                     and e.g.
+                  </li>
+                  <li>
+                     Node Package Manager <b>(NPM), Yarn</b>
+                  </li>
+                  <li>
+                     Version Control System - <b>Git, GitHub</b>
+                  </li>
+                  <li>
+                     Experience in <b>Front-End Development</b>
+                  </li>
+               </ul>
+               <Heading align="center" tyle={{ margin: 0 }}>
+                  Experience
                </Heading>
-               <FlexBox
-                  flexDirection="row"
-                  width="100%"
-                  height="70%"
-                  gap="40px"
-               >
-                  <ul>
-                     <li>
-                        First Name: <br />
-                        <span>Khushnud</span>
-                     </li>
-                     <li>
-                        Age: <br />
-                        <span>18</span>
-                     </li>
-                     <li>
-                        Freelance: <br />
-                        <span>available</span>
-                     </li>
-                     <li>
-                        Phone: <br />
-                        <span>xx xxx-xx-xx</span>
-                     </li>
-                     <li>
-                        LinkedIn: <br />
-                        <span>melievkh</span>
-                     </li>
-                  </ul>
-                  <ul>
-                     <li>
-                        Last Name: <br />
-                        <span>Meliev</span>
-                     </li>
-                     <li>
-                        Nationality: <br />
-                        <span>uzbek</span>
-                     </li>
-                     <li>
-                        Adress: <br />
-                        <span>Samarkand</span>
-                     </li>
-                     <li>
-                        Email: <br />
-                        <span>khushnudmeliev21@gmail.com</span>
-                     </li>
-                     <li>
-                        Languages: <br />
-                        <span>Uzbek, English, Turkish</span>
-                     </li>
-                  </ul>
-               </FlexBox>
-               <Button wd="200px" onClick={hiringMsg}>
-                  Hire Me
-               </Button>
-            </PersonalInfo>
-
+               <ul>
+                  <li>
+                     2 years of experience as a <b>UI/UX Designer</b>
+                  </li>
+                  <li>
+                     2 years of experience as a <b>Front-End Developer</b>
+                  </li>
+                  <li>
+                     1 year of experience as a <b>React JS Developer</b>
+                  </li>
+                  <li>
+                     2 years of experience as a <b>Javascript Developer</b>
+                  </li>
+               </ul>
+            </ProgrammingSkills>
             <Experiences>
                <Card>
                   <CircleBox>2+</CircleBox>

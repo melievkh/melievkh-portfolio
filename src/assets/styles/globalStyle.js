@@ -7,11 +7,7 @@ body {
    padding: 0;
    width: 100%;
    height: 100%;
-   background: url('https://images.unsplash.com/photo-1464639351491-a172c2aa2911?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1374&q=80') no-repeat center center fixed; 
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
+   background-color: ${colors.bgColor};
 }
 ul li {
    list-style-type: none;
@@ -22,7 +18,7 @@ hr {
    height: 4px;
    background-image: radial-gradient(
     closest-side,
-    #ffa500,
+    #435075,
     hsla(0, 0%, 50%, 0) 100%);
   position: relative;
 }

@@ -17,7 +17,7 @@ function App() {
          <GlobalStyle />
          <Navbar />
          <Home />
-         <hr />
+         <hr/>
          <About />
          <hr />
          <Skill />
