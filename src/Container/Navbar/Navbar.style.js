@@ -5,7 +5,7 @@ import { colors } from '../../assets/styles/colors';
 export const Wrapper = styled.div`
    width: 100%;
    height: 55px;
-   background-color: inherit;
+   background-color: ${colors.bgColor};
    box-shadow: rgba(0, 0, 0, 0.3) 0px 6px 12px -2px,
       rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
    display: flex;
