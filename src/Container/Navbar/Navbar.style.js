@@ -1,4 +1,5 @@
 import styled from 'styled-components';
+import mobile from '../../assets/media/mobile';
 import { colors } from '../../assets/styles/colors';
 
 export const Wrapper = styled.div`
@@ -16,6 +17,10 @@ export const Wrapper = styled.div`
       text-decoration: none;
       &:hover {
       }
+   }
+   ${mobile} {
+      width: auto;
+      justify-content: space-between;
    }
 `;
 

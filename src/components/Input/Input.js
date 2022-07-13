@@ -1,4 +1,5 @@
 import styled from 'styled-components';
+import mobile from '../../assets/media/mobile';
 import { colors } from '../../assets/styles/colors';
 
 const Input = styled.input`
@@ -18,6 +19,9 @@ const Input = styled.input`
    }
    &::-webkit-input-placeholder {
       color: ${colors.text};
+   }
+   ${mobile} {
+      width: 350px;
    }
 `;
 export default Input;
