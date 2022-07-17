@@ -1,7 +1,7 @@
 import React from 'react';
 import ReactTypingEffect from 'react-typing-effect';
 import { icons } from '../../mock/icons';
-import { HomeContainer, IconList, TextBox } from './Home.style';
+import { HomeContainer, IconList, Lorem, TextBox } from './Home.style';
 import Heading from '../../components/Heading/Heading';
 import Button from '../../components/Button/Button';
 import { colors } from '../../assets/styles/colors';
@@ -23,12 +23,12 @@ function Home() {
                   typingDelay={20}
                />
             </Heading>
-            <Text size='lg' style={{ width: '600px' }}>
+            <Lorem>
                Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque,
                quasi qui distinctio vel accusantium voluptatem expedita
                accusamus dicta iste possimus culpa nesciunt dolorem excepturi!
                Aliquam maxime et nihil numquam aspernatur.
-            </Text>
+            </Lorem>
             <IconList>
                {icons.map((icon) => (
                   <li key={icon.id}>

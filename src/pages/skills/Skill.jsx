@@ -9,8 +9,8 @@ function Skill() {
    return (
       <SkillContainer id="skills">
          <Title>My Skills</Title>
-         <SkillsBox>
             <Heading>Languages and Tools those I use are</Heading>
+         <SkillsBox>
             <Languages>Javascript</Languages>
             <Languages>HTML5</Languages>
             <Languages>CSS3</Languages>

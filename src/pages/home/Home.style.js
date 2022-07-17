@@ -1,12 +1,13 @@
 import styled from 'styled-components';
-import { media } from '../../assets/media/media';
+import mobile from '../../assets/media/mobile';
 import FlexBox from '../../components/Flexbox/FlexBox';
+import Text from '../../components/Text/Text'
 
 export const HomeContainer = styled(FlexBox)`
    height: 90vh;
    flex-direction: row;
-   ${media.lg} {
-      height: auto;
+   ${mobile} {
+      height: 680px;
    }
 `;
 
@@ -16,7 +17,7 @@ export const TextBox = styled(FlexBox)`
    height: 80%;
    align-items: center;
    gap: 8px;
-   ${media.lg} {
+   ${mobile} {
       align-items: center;
       justify-content: center;
    }
@@ -38,3 +39,12 @@ export const IconList = styled.ul`
       }
    }
 `;
+
+export const Lorem = styled(Text)`
+   width: 600px;
+   font-size: 24px;
+   ${mobile}{
+      width: auto;
+      font-size: 22px;
+   }
+`

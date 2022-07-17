@@ -1,6 +1,7 @@
 import styled from 'styled-components';
 import FlexBox from '../../components/Flexbox/FlexBox';
 import Button from '../../components/Button/Button'
+import mobile from '../../assets/media/mobile';
 
 export const SkillContainer = styled(FlexBox)`
    width: 100%;
@@ -21,6 +22,9 @@ export const SkillsBox = styled.div`
    justify-content: center;
    flex-wrap: wrap;
    gap: 12px;
+   ${mobile}{
+      width: auto;
+   }
 `
 
 export const Languages = styled(Button)`

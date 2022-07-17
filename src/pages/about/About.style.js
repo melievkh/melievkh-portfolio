@@ -1,5 +1,5 @@
 import styled from 'styled-components';
-import { media } from '../../assets/media/media';
+import mobile from '../../assets/media/mobile';
 import { colors } from '../../assets/styles/colors';
 import FlexBox from '../../components/Flexbox/FlexBox';
 
@@ -18,14 +18,14 @@ export const AboutContainer = styled(FlexBox)`
    span {
       color: ${colors.text};
    }
-   ${media.lg} {
+   ${mobile} {
       height: auto;
       width: auto;
    }
 `;
 
 export const Informations = styled(FlexBox)`
-   ${media.lg} {
+   ${mobile} {
       flex-direction: column;
       gap: 10px;
    }
@@ -35,11 +35,14 @@ export const ProgrammingSkills = styled(FlexBox)`
    width: 50%;
    align-items: flex-start;
    padding: 10px 20px;
-   li{
+   li {
       margin: 0;
+      ${mobile} {
+         width: auto;
+      }
    }
-   ${media.lg} {
-      width: 100%;
+   ${mobile} {
+      width: auto;
       height: auto;
       justify-content: center;
       align-items: center;
@@ -52,7 +55,7 @@ export const Experiences = styled.div`
    display: grid;
    grid-template-columns: auto auto;
    place-items: center;
-   ${media.md} {
+   ${mobile} {
       width: 100%;
    }
 `;
@@ -60,7 +63,7 @@ export const Experiences = styled.div`
 export const Card = styled(FlexBox)`
    width: 240px;
    height: 240px;
-   ${media.sm} {
+   ${mobile} {
       width: 210px;
       height: 210px;
    }

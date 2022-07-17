@@ -1,4 +1,5 @@
 import styled, { css } from 'styled-components';
+import mobile from '../../assets/media/mobile';
 import { colors } from '../../assets/styles/colors';
 
 const headingSize = {
@@ -20,6 +21,9 @@ const Text = styled.p`
    text-indent: ${({ textIndent }) => textIndent};
    text-align: ${({ align }) => align || 'center'};
    margin: 0;
+   ${mobile} {
+      width: auto;
+   }
 `;
 
 export default Text;

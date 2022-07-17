@@ -12,6 +12,7 @@ import {
    MailText,
    Name,
    ContactContainer,
+   Lorem,
 } from './Contact.style';
 import Button from '../../components/Button/Button';
 import Input from '../../components/Input/Input';
@@ -50,36 +51,30 @@ function Contact() {
          <ContactContainer>
             <AdressBox>
                <Heading>CONTACT INFO</Heading>
-               <Text align="start" style={{width: '450px'}}>
+               <Lorem>
                   Lorem ipsum dolor sit, amet consectetur adipisicing elit.
                   Dolore porro repudiandae veniam nesciunt odio eius animi
                   saepe...
-               </Text>
+               </Lorem>
                <FlexBox gap="10px">
                   <FlexBox height="30%" flexDirection="row" gap="10px">
                      <GoLocation />
                      <MailText>
-                        <Heading size="sm" style={{ margin: 0 }}>
-                           ADDRESS POINT
-                        </Heading>
+                        <Heading style={{ margin: 0 }}>ADDRESS POINT</Heading>
                         <Text>Uzbekistan, Samarkand</Text>
                      </MailText>
                   </FlexBox>
                   <FlexBox height="30%" flexDirection="row" gap="10px">
                      <FiMail />
                      <MailText>
-                        <Heading size="sm" style={{ margin: 0 }}>
-                           MAIL ME
-                        </Heading>
+                        <Heading style={{ margin: 0 }}>MAIL ME</Heading>
                         <Text>khushnudmeliev21@gmail.com</Text>
                      </MailText>
                   </FlexBox>
                   <FlexBox height="30%" flexDirection="row" gap="10px">
                      <FiPhoneCall />
                      <MailText>
-                        <Heading size="sm" style={{ margin: 0 }}>
-                           CALL ME
-                        </Heading>
+                        <Heading style={{ margin: 0 }}>CALL ME</Heading>
                         <Text>xx xxx xx xx</Text>
                      </MailText>
                   </FlexBox>
@@ -111,6 +106,7 @@ function Contact() {
                      }
                      value={details.name}
                      autoComplete="off"
+                     required
                   />
                   <Input
                      name="surname"
@@ -121,6 +117,7 @@ function Contact() {
                      }
                      value={details.surname}
                      autoComplete="off"
+                     required
                   />
                </Name>
                <Input
@@ -133,6 +130,7 @@ function Contact() {
                   }
                   value={details.email}
                   autoComplete="off"
+                  required
                />
                <textarea
                   name="message"
@@ -144,11 +142,10 @@ function Contact() {
                   }
                   value={details.message}
                   autoComplete="off"
-               ></textarea>
-               <Button wd="160px" hg="40px" style={{ marginLeft: '500px' }}>
-                  <FlexBox flexDirection="row" justifyContent="space-evenly">
-                     Send Message <FaTelegram style={{ fontSize: '22px' }} />
-                  </FlexBox>
+                  required
+               />
+               <Button wd="160px">
+                  Send Message <FaTelegram style={{ fontSize: '22px' }} />
                </Button>
             </Form>
          </ContactContainer>

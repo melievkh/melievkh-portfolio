@@ -1,24 +1,24 @@
 import styled, { css } from 'styled-components';
-import { media } from '../../assets/media/media';
+import mobile from '../../assets/media/mobile';
 import { colors } from '../../assets/styles/colors';
 
 const headingSize = {
    sm: css`
       font-size: 20px;
-      ${media.lg} {
+      ${mobile} {
          font-size: 18px;
       }
    `,
    md: css`
       font-size: 24px;
-      ${media.lg} {
-         font-size: 22px;
+      ${mobile} {
+         font-size: 20px;
       }
    `,
    lg: css`
       font-size: 55px;
-      ${media.lg} {
-         font-size: 26px;
+      ${mobile} {
+         font-size: 35px;
       }
    `,
 };

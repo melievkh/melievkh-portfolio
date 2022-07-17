@@ -1,21 +1,35 @@
 import styled from 'styled-components';
+import mobile from '../../assets/media/mobile';
 import { colors } from '../../assets/styles/colors';
 import FlexBox from '../../components/Flexbox/FlexBox';
+import Text from '../../components/Text/Text';
 
 export const Wrapper = styled.div`
    height: 85vh;
    svg {
       font-size: 30px;
    }
+   ${mobile} {
+      height: auto;
+   }
 `;
 export const ContactContainer = styled.div`
-  display: flex;
-  flex-direction: row;
-`
+   display: flex;
+   flex-direction: row;
+   ${mobile} {
+      height: fit-content;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+   }
+`;
 export const AdressBox = styled(FlexBox)`
    width: 40%;
    height: 90%;
    gap: 20px;
+   ${mobile} {
+      width: auto;
+   }
 `;
 
 export const MailText = styled.div`
@@ -65,6 +79,10 @@ export const Form = styled.form`
       &::-webkit-input-placeholder {
          color: ${colors.text};
       }
+      ${mobile} {
+         width: 350px;
+         height: 100px;
+      }
    }
 `;
 export const Name = styled(FlexBox)`
@@ -72,4 +90,14 @@ export const Name = styled(FlexBox)`
    height: 20%;
    flex-direction: row;
    justify-content: space-evenly;
+   ${mobile} {
+      gap: 4px;
+   }
+`;
+
+export const Lorem = styled(Text)`
+   width: 450px;
+   ${mobile} {
+      width: auto;
+   }
 `;

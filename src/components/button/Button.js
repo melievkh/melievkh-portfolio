@@ -7,12 +7,16 @@ const Button = styled.button`
    background-color: ${({ bgColor }) => bgColor || '#435075'};
    border-radius: ${({ borderRadius }) => borderRadius || '8px'};
    font-size: ${({ fontSize }) => fontSize || '18px'};
+   display: flex;
+   flex-direction: row;
+   align-items: center;
+   justify-content: space-evenly;
    font-family: serif;
    color: ${colors.text};
    border: none;
    cursor: pointer;
    outline: none;
-   &:hover{
+   &:hover {
       background-color: inherit;
       border: 1px solid ${colors.special};
    }
